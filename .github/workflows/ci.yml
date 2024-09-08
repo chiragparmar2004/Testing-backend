@@ -23,4 +23,4 @@ jobs:
       run: docker build -t chiragparmar2004/testing-backend .
 
     - name: Push to DockerHub
-      run: docker push chiragparmar2004/testing-backend:latest
+      run: docker push chirag4780/testing-backend:latest
