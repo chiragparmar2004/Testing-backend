@@ -18,7 +18,11 @@ const StartServer = async () => {
       message: "testing successful",
     });
   });
-
+  app.get("/test", (req, res) => {
+    res.status(200).json({
+      message: "Helllo there",
+    });
+  });
   app
     .listen(PORT, () => {
       console.log(`listening to port ${PORT}`);
