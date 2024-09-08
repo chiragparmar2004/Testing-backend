@@ -13,6 +13,11 @@ const StartServer = async () => {
       message: "Initialization successful",
     });
   });
+  app.get("/testing", (req, res) => {
+    res.status(200).json({
+      message: "testing successful",
+    });
+  });
 
   app
     .listen(PORT, () => {
