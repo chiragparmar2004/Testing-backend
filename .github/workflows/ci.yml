@@ -20,7 +20,7 @@ jobs:
       run: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
 
     - name: Build the Docker image
-      run: docker build -t chiragparmar2004/testing-backend .
+      run: docker build -t chirag4780/testing-backend .
 
     - name: Push to DockerHub
       run: docker push chirag4780/testing-backend:latest
