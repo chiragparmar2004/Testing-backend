@@ -10,7 +10,7 @@ const StartServer = async () => {
 
   app.get("/", (req, res) => {
     res.status(200).json({
-      message: "Initialization successful",
+      message: "You are good to go ",
     });
   });
   app.get("/testing", (req, res) => {
