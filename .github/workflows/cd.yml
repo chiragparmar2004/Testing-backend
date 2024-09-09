@@ -14,6 +14,6 @@ jobs:
       - name: Pull Docker image
         run: sudo docker pull chirag4780/testing-backend:latest
       - name: Delete Old docker container
-        run: sudo docker rm -f testing-backend-container || true
+        run: sudo docker rm -f testing-backend || true
       - name: Run Docker Container
-        run: sudo docker run -d -p 8080:8080 --name testing-backend-container chirag4780/testing-backend
+        run: sudo docker run -d -p 8080:8080 --name testing-backend chirag4780/testing-backend
